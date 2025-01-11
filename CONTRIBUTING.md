@@ -65,7 +65,7 @@ If your function doesn't return anything just show how to use it. If the result 
 
 To ensure your snippet isn’t refused, consider these questions:
 - **Does the standard library of my language provide an easy way of doing this ?**
-- **Does that snippet have a real, and practical use case ?**
+- **Does that snippet not have a real, and practical use case ?**
 - **Could it be split into separate parts to be better understood ?**
 
 If any answer is yes, then your snippet will most likely get rejected.
@@ -117,7 +117,7 @@ Here’s an example for JavaScript:
 title: Format Date
 description: Formats a date in 'YYYY-MM-DD' format.
 author: dostonnabotov
-tags: javascript,date,format
+tags: date,format
 ---
 
 ```js
@@ -141,11 +141,11 @@ console.log(formatDate(new Date())); // Output: '2024-12-10'
         It will return nothing if they are well formatted, otherwise it will tell you what the error is.
 
         ---
-        To preview the snippets, you need to consolidate them, use the `snippets:consolidate` script:
+        To preview the snippets, start the vite server using:
         ```
-        $ npm run snippets:consolidate
+        $ npm run dev
         ```
-        It will update the snippets in the `/public` folder, making them available to the frontend.
+        It will use HMR to update the snippets in the `/public` folder, making them available to the frontend.
 
 Expected file structure:
 

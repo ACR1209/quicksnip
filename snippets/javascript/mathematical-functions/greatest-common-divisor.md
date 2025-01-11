@@ -2,7 +2,7 @@
 title: Greatest Common Divisor
 description: Calculates the largest positive integer that divides each of the integers without leaving a remainder. Useful for calculating aspect ratios.
 author: JanluOfficial
-tags: math,division
+tags: math,division,number-theory,algebra
 ---
 
 ```js

@@ -63,7 +63,7 @@ Here's an example for JavaScript:
 title: Format Date
 description: Formats a date in 'YYYY-MM-DD' format.
 author: dostonnabotov
-tags: javascript,date,format
+tags: date,format
 ---
 
 ```js

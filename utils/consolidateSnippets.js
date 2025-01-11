@@ -1,7 +1,7 @@
 import { exit } from 'process';
 import { parseAllSnippets, reverseSlugify, slugify } from './snippetParser.js';
 import { join } from 'path';
-import { copyFileSync, writeFileSync } from 'fs';
+import { copyFileSync, mkdirSync, writeFileSync } from 'fs';
 
 const dataPath = 'public/consolidated/';
 const indexPath = join(dataPath, '_index.json');
@@ -11,6 +11,9 @@ const snippetsPath = 'snippets/';
 const [ errored, languages ] = parseAllSnippets();
 
 if(errored) exit(1);
+
+mkdirSync(dataPath, { recursive: true });
+mkdirSync(iconPath, { recursive: true });
 
 const index = [];
 for(const language of languages) {
